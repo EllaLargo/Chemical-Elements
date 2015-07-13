@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link href="css/materialize-icons.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<br><br><br>
+<hr>
+<div data-role="header" color="white">
+  <h3>Chemical Components</h3>
+</div>
+<hr>
+<br><br>
+    <body align="center" bgcolor="white">
+      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      function Generate()
+      {
+        var a = 
+        {
+          h:"Hydrogen", he:"Helium",li:"Lithium", be:"Berrylium", b:"Boron",c:"Carbon",n:"Nitrogen",o:"Oxygen",f:"Flourine",
+		  ne:"Neon",na:"Sodium",mg:"Magnesium",al:"Aluminum",si:"Silicon",cl:"Chlorine",ar:"Argon",
+		  k:"Pottasim",ca:"Calcium",sc:"Scandium",ti:"Titanium",v:"Vanadium",cr:"Chonium",mn:"Manganese",
+		  fe:"Iron",co:"Cobalt",ni:"Nickel",cu:"Copper",zn:"Zinc",ga:"Gallium",ge:"Germanium",
+		  as:"Astatine",se:"Selenium",br:"Bromine",kr:"Krypton",rb:"Rubidium",sr:"Strontium",y:"Yttrium",
+		  zr:"Zirconium",nb:"Niobium",mo:"Molybdenum",tc:"Techtenium",ru:"Ruthenium",rh:"Rhodium",
+		  pd:"Palladium",ag:"Silver",cd:"Cadmium",in:"Indium",sn:"Tin",sb:"Antimony",te:"Tellurium",i:"Iodine",
+		  xe:"Xenon",cs:"Cesium",ba:"Barium",la:"Lanthanum",ce:"Cerium",pr:"Praseodymium",nd:"Neodymium",pm:"Promethium",
+		  sm:"Samarium",eu:"Europium",gd:"Gadolinium",tb:"Terbium",dy:"Dysprosium",ho:"Holmium",er:"Erbium",tm:"Thulium",
+		  yb:"Ytterbium",lu:"Lutetium",hf:"Hafnium",ta:"Tantalum",w:"Tungsten",re:"Rhenium",os:"Osmium",ir:"Iridium",
+		  pt:"Platinum",au:"Gold",hg:"Mercury",tl:"Thallium",pb:"Lead",bi:"Bismuth",po:"Polonium",
+		  at:"Astatine",rn:"Radon",fr:"Francium",ra:"Radium",ac:"Actinium",th:"Thorium",pa:"Protactinium",u:"Uranium",
+		  np:"Neptunium",pu:"Plutonium",am:"Americium",cm:"Curium",bk:"Berkelium",cf:"Californium",es:"Einsteinium",
+		  fm:"Fermium",md:"Mendelevium",no:"Nobelium",lr:"Lawrencium",rf:"Unnilquadium",db:"Unnilpentium",sg:"Unnilhexium",
+		  bh:"Unnilseptium",hs:"Unniloctium",mt:"Unnilennium",uun:"Ununnilium",uuu:"Unununium",uub:"Ununbium"
+        }
+        var c = document.getElementById('txtChem').value
+        document.getElementById('txtAnswer').value = a[c.toString()];
+        document.getElementById('lblChem').hidden = true  ;
+      }
+      </script>
+
+      
+<div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="txtChem" class="materialize-textas"/>
+          <label for="txtBox1 " id="txtLabel" value="Input Chemical Symbol">Input Chemical Symbol</label>
+          
+          
+
+        </div>
+      </div>
+  
+  </div>
+ 
+   <div class="row">
+   
+  <button class="btn waves-effect waves-light" name="action" onClick="Generate()">Generate
+    <i class="material-icons"></i>
+  </button>
+
+
+
+ 
+
+      <div class="row">
+        <div class="input-field col s12">
+           <input type="text" id="txtAnswer" class="materialize-textas"/>
+          <label for="txtAnswer" id="lblChem"/>Chemical Element</label>
+          
+
+        </div>
+      </div>
+  
+  </div>
+
+   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">settings</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">list</i></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">assessment</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">search</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">done</i></a></li>
+    </ul>
+</div>
+
+
+     
+
+
+
+
+    </body>
+</html>
